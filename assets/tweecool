@@ -1,0 +1,19 @@
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script src="http://api.tweecool.com/js/tweecool.min.js"></script>
+	<script>
+	$(document).ready(function() {
+	    $('#tweecool').tweecool({
+	      //settings
+	       username : 'lucas_anderton', 
+	       limit : 1	
+	    });
+	});
+	</script>
+	<!--[if lte IE 9]>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-ajaxtransport-xdomainrequest/1.0.2/jquery.xdomainrequest.min.js"></script>      
+	<![endif]-->
+
+
+
+
+	<div id="tweecool"></div>

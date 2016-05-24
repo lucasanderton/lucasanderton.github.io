@@ -1,0 +1,290 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+body {
+	
+	font-family: 'Droid Serif', serif;
+	font-size: 14px;
+	color: #181617;
+	margin: 0px;
+	padding: 0px;
+	background-color: #FDFBF5;	
+	
+}
+
+
+img {
+
+	border-style: none;	
+	margin: 0px;
+}
+
+
+p { 
+
+	line-height: 1.6;
+	margin: 0px;
+	
+}
+
+
+a:link, a:visited {
+
+	color: #615857;
+	text-decoration: none;
+	border-bottom: 1px dotted #615857;
+	
+}
+
+
+a:hover {
+
+	color: #AA9593;
+	border-bottom: 1px dotted #AA9593;
+	
+}
+
+
+#container {
+
+	width: 960px;
+	border: 0px;
+	margin: 50px auto 0px auto;
+	padding: 0px;
+	
+} 
+
+
+::selection {
+
+     background: #9B5145; 
+     color: #FDFBF5;
+
+}
+
+
+::-moz-selection {
+
+     background: #9B5145;
+     color: #FDFBF5;
+     
+}
+
+
+
+/*Navigation*/
+
+
+#header {
+
+	width: 940px;
+	height: 53px;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;		
+}
+
+
+	#header p {
+	
+		font-family: 'Droid Sans', sans-serif;
+		line-height: normal;		
+		
+	}
+
+
+	#header a:link,
+	#header a:visited,
+	#header a:hover { 
+
+		color: #181617;
+		border: 0px; 
+		
+	}
+
+
+#title {
+
+	width: 400px;
+	height: 35px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	float: left;
+	position: relative;
+
+}
+
+
+#main-nav {
+
+	width: 300px;
+	height: 35px;
+	margin: 0px 0px 0px 0px;
+	padding: 0px;
+	float: right;
+	position: relative;
+	text-align: right;
+	
+}
+
+
+	#main-nav a:hover { 
+
+		color: #AA9593;
+		border: 0px; 
+	
+	}
+
+
+#top-line {
+
+	width: 940px;
+	height: 3px;
+	margin-top: 2px;
+	padding: 0px;
+	clear: both;
+	float: left;
+	background-image: url('../img/main/line-top.png');
+	background-repeat: no-repeat;
+	
+}
+
+
+.bullet {
+
+	margin: 0px 15px 0px 15px;
+
+}
+
+
+.bullet2 {
+
+	margin: 0px 18px 0px 15px;
+
+}
+
+
+
+/*Content*/
+
+
+#intro {
+
+	width: 870px;
+	height: 45px;
+	margin: 0px 0px 5px 10px;
+
+} 
+
+
+.divider-line {
+
+	width: 940px;
+	height: 20px;
+	margin: 0px 0px 0px 10px;
+	clear: both;
+	float: left;
+	background-image: url('../img/main/line-home-bottom.png');
+	background-repeat: no-repeat;
+	
+}
+
+
+	.divider-line, .thumb a:link,
+	.divider-line, .thumb a:visited,
+	.divider-line, .thumb a:hover { 
+
+		border: 0px; 
+	
+	}
+
+
+	.circle {
+
+		float: right;
+		position: relative;
+		margin: 0px 0px 0px 7px;
+
+	}
+
+
+.column {
+
+	width: 220px;
+	margin: 10px 10px 10px 10px;
+	float: left;
+	position: relative;
+	
+}
+
+
+.thumb {
+
+	width: 220px;
+	margin: 10px 0px 10px 0px;
+	float: left;
+	position: relative;
+
+}
+
+
+	.img-A1, .img-A2, .img-A3, .img-A4, .img-A5, .img-A6, .img-A7, .img-A8, .img-A9, .img-A10, .img-A11, .img-A12, .img-A13, .img-A14, .img-A15, .img-A16, .img-A17, .img-A18,
+	.img-B1, .img-B2, .img-B3, .img-B4, .img-B5, .img-B6, .img-B7, .img-B8, .img-B9, .img-B10, .img-B11, .img-B12, .img-B13,
+	.img-C1, .img-C2, .img-C3, .img-C4, .img-C5, .img-C6, .img-C7, .img-C8, .img-C9, .img-C10, .img-C11, .img-C12, .img-C13, .img-C14, .img-C15, .img-C16, .img-C17,
+	.img-D1, .img-D2, .img-D3, .img-D4, .img-D5, .img-D6, .img-D7, .img-D8, .img-D9, .img-D10, .img-D11, .img-D12, .img-D13 {
+
+		float: left;
+		position: relative;
+
+	}
+	
+	
+	.hover-A1, .hover-A2, .hover-A3, .hover-A4, .hover-A5, .hover-A6, .hover-A7, .hover-A8, .hover-A9, .hover-A10, .hover-A11, .hover-A12, .hover-A13, .hover-A14, .hover-A15, .hover-A16, .hover-A17, .hover-A18,
+	.hover-C1, .hover-C2, .hover-C3, .hover-C4, .hover-C5, .hover-C6, .hover-C7, .hover-C8, .hover-C9, .hover-C10, .hover-C11, .hover-C12, .hover-C13, .hover-C14, .hover-C15, .hover-C16, .hover-C17 {
+
+		width: 220px;
+		height: 175px;
+		margin: 0px;
+		position: absolute;
+		z-index: 2;
+
+	}
+
+
+	.hover-B1, .hover-B2, .hover-B3, .hover-B4, .hover-B5, .hover-B6, .hover-B7, .hover-B8, .hover-B9, .hover-B10, .hover-B11, .hover-B12, .hover-B13,
+	.hover-D1, .hover-D2, .hover-D3, .hover-D4, .hover-D5, .hover-D6, .hover-D7, .hover-D8, .hover-D9, .hover-D10, .hover-D11, .hover-D12, .hover-D13 {
+
+		width: 220px;
+		height: 240px;
+		margin: 0px;
+		position: absolute;
+		z-index: 2;
+
+	}
+
+
+/*Footer*/
+
+
+#footer {
+
+	width: 940px;
+	height: 30px;
+	margin: 10px 10px 20px 10px;
+	float: left;
+	position: relative;
+	clear: both;
+	
+} 
+
+
+	#footer p {
+
+		font-family: 'Droid Sans', sans-serif;
+		font-size: 10px;
+		color: #AA9593;
+		line-height: normal;
+
+	}
+
+

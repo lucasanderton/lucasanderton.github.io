@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+	Login
+</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+<link rel="icon" href="Assets/oldlogo.png" sizes="32x32" />
+<link href="http://readyforlucas.com/stylesheet.css" rel="stylesheet">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+<style type="text/css">
+body{
+	background-color:#363E41;
+	color:#fff;
+}
+table{
+	background-color: #C4C4C4
+}
+
+</style>
+</head>
+<body>
+<!-- NAVIGATION -->
+<nav class="navbar navbar-inverse navbar-static-top">
+	<div class="container-fluid" id="bs-example-navbar-collapse-1">
+		<ul class="nav navbar-nav">
+			<li style="padding:10px;font-size:20px;"><i class="fa fa-cogs" style="padding-right:10px;"></i>  Dashboard Login</li>
+		</ul>
+		<ul class="nav navbar-nav navbar-right">
+			<li style="padding:10px;font-size:20px;">Welcome, Lucas.</li>
+			<li style="padding:5px;font-size:20px;"><img src="http://readyforlucas.com/cp/andertonlogo.png" style="height:40px;width:40px;"></li>
+		</ul>
+	</div>
+</nav>
+<!-- END OF NAV -->
+<script language="javascript">
+<!--//
+/*This Script allows people to enter by using a form that asks for a
+UserID and Password*/
+function pasuser(form) {
+if (form.id.value=="lucas") { 
+if (form.pass.value=="gray266075") {              
+location="protectpage.html" 
+} else {
+alert("Invalid Password")
+}
+} else {  alert("Invalid UserID")
+}
+}
+//-->
+</script>
+<div class="container" style="height:80px;">
+</div>
+<center><img src="Assets/oldlogo.png" style="height:140px;width:140px;"></center>
+<h3 class="text-center" style="color:#72BBE8;">Anderton Development</h3>
+<h4 class="text-center" style="padding-bottom:40px;">Control Panel Login</h4>
+<div class="container" style="width:30%">
+<form class="form-horizontal" name="login">
+  <div class="form-group">
+    <label for="inputEmail3" class="col-sm-2 control-label">Username</label>
+    <div class="col-sm-10">
+      <input type="email" class="form-control" id="inputEmail3" placeholder="Username" name="id">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+    <div class="col-sm-10">
+      <input type="password" class="form-control" id="inputPassword3" placeholder="Password" name="pass">
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-2">
+      <button type="submit" class="btn btn-success" onClick="pasuser(this.form)">Sign in</button>
+    </div>
+  </div>
+</form>
+</div>
+<!-- THIS IS THE OLD LOGIN SHAT
+<center>
+<table cellpadding="12" border="1">
+<tr><td colspan="2"><center><h1><i><b>
+<h2>
+<script language="JavaScript1.2">
+
+/*
+Neon Lights Text
+By JavaScript Kit (http://javascriptkit.com)
+Over 400+ free scripts here!
+*/
+
+var message="Welcome, Lucas. Please Login."
+var neonbasecolor="black"
+var neontextcolor="blue"
+var flashspeed=100  //in milliseconds
+
+///No need to edit below this line/////
+
+var n=0
+if (document.all||document.getElementById){
+document.write('')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+//Change all letters to base color
+if (n==0){
+for (m=0;m<message.length;m++)
+//eval("document.all.neonlight"+m).style.color=neonbasecolor
+crossref(m).style.color=neonbasecolor
+}
+
+//cycle through and change individual letters to neon color
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</h2>
+</b></i></h1></center></td></tr>
+<tr><td><h1><i><b>UserID:</b></i></h1></td><td><form name="login"><input
+name="id" type="password"></td></tr>
+<tr><td><h1><i><b>Password:</b></i></h1></td><td><input name="pass"
+type="password"></td></tr>
+<tr><td><center><input type="button" value="Login"
+onClick="pasuser(this.form)"></center></td><td><center><br><input
+type="Reset"></form></td></tr></table>
+READY FOR LUCAS Campaign Site In Progress</center> 
+-->
+<!--<SCRIPT>
+function passWord() {
+var testV = 1;
+var pass1 = prompt('Please Enter Your Password',' ');
+while (testV < 3) {
+if (!pass1) 
+history.go(-1);
+if (pass1.toLowerCase() == "graysongray5") {
+alert('You Got it Right!');
+window.location.assign('protectpage.html');
+break;
+} 
+testV+=1;
+var pass1 = 
+prompt('Access Denied - Password Incorrect, Please Try Again.','Password');
+}
+if (pass1.toLowerCase()!="password" & testV ==3) 
+history.go(-1);
+return " ";
+} 
+</SCRIPT>
+<CENTER>
+	<h3><b>Welcome, Lucas. Login to Your Dashboard</b></h3>
+<FORM>
+<input type="button" value="Enter Protected Area" onClick="passWord()">
+</FORM>
+</CENTER>
+-->
+
+</body>
+</html>

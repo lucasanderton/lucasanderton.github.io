@@ -1,0 +1,182 @@
+
+<!DOCTYPE html>
+<head>
+  <title>
+Never Doubt the Spruillness
+  </title>
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:400,300" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<style>
+
+body{
+  text-align: center; 
+  background-color: #1D4459;
+  color: white;
+  font-family: Helvetica;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+p{
+    font-size: 24px;
+}
+h1{
+    font-size:34px;
+}
+input{
+    border:0;
+    padding: 12px;
+    font-size: 18px;
+}
+input[type="submit"]{
+    background: limegreen;
+    color: black; 
+}
+main {
+  /* Use a max-width so that we have 4 columns */
+  max-width:680px;
+  margin:auto;
+  padding:20px;
+}
+
+main header {
+  text-align:center;
+  margin:0 5px 36px 5px;
+  font-size:24px;
+  border:1px rgb(128, 128, 159) solid;
+  padding:8px;
+  background:rgba(128, 128, 159, 0.1);
+}
+
+ul {
+  /* We don't need actual bullets */
+  list-style:none;
+}
+
+li {
+  float:left; /* So that they wrap */
+  height:150px;
+  width:150px;
+  margin:5px; /* The gaps between them */
+  
+  text-transform:capitalize;
+  
+  /*transition may need prefixes in some browsers */
+  -webkit-transition:.2s -webkit-transform, 1s opacity;
+  -moz-transition:   .2s -moz-transform, 1s opacity;
+  -o-transition:     .2s -o-transform, 1s opacity;
+  transition:        .2s transform, 1s opacity;
+  
+  /*transform*/
+  -webkit-transform:perspective(800px);
+  -moz-transform:perspective(800px);
+  -ms-transform:perspective(800px);
+  -o-transform:perspective(800px);
+  transform:perspective(800px);
+  
+  /*transform-style*/
+  -webkit-transform-style:preserve-3d;
+  -moz-transform-style:preserve-3d;
+  -ms-transform-style:preserve-3d;
+  -o-transform-style:preserve-3d;
+  transform-style:preserve-3d;
+  -webkit-transform-origin-x:50%;
+  -webkit-transform-origin-y:50%;
+  
+  text-align:center;
+  cursor:pointer;
+}
+
+/* When moused over, rotate it! */
+li:active {
+  /*transform*/
+  -webkit-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -moz-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -ms-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  -o-transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+  transform:perspective(800px) rotate3d(1, 0, 0, 17deg);
+}
+
+/* It'd be neat to have double-width tiles */
+.span2{
+  width:310px;
+}
+
+/* Icon and number */
+li i{
+  font-size:60px;
+  margin:35px 0 0;
+}
+
+/* Text label on tiles */
+li span{
+  position:absolute;
+  bottom:8px;
+  left:8px;
+}
+
+/* Specialized background colours */
+.games{
+  background:rgb(0, 192, 0);
+}
+.phone{
+  background:rgb(27, 161, 226);
+}
+.messages{
+  background:rgb(240, 163, 10);
+}
+.contacts{
+  background:rgb(119, 158, 203);
+}
+.internet{
+  background:rgb(0, 80, 239);
+}
+.maps{
+  background:rgb(119, 221, 119);
+}
+.search{
+  background:rgb(130, 111, 214);
+}
+.settings{
+  background:rgb(100, 118, 135);
+}
+.email{
+  background:rgb(255, 105, 97);
+}
+.photos{
+  background:rgb(162, 0, 37);
+} 
+a:link {text-decoration:none;color:#FFFFFF;}
+a:visited {text-decoration:none;color:#FFFFFF;}
+a:hover {text-decoration:none;color:#FFFFFF;}
+a:active {text-decoration:none;color: #FFFFFF;}  
+.footer {
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    margin: 0;
+    background-color: #1D4459;
+    height: 35px;/* or however high you would like */
+    padding-left: 0px;
+    padding-right:0px;
+}  
+</style>
+</head>
+<body ontouchstart="">
+<center><h1>Mr. Spruill's AP Government Site</h1></center>
+<main>
+ <ul>
+        <a href="http://fcapg.com"><li class="phone"><i class="fa fa-wordpress fa-4x"> </i><span>Class Blog</span></li></a>
+        <a href="/history/eightfoldpath.html"><li class="messages"><i class="fa fa-laptop fa-4x"> </i><span>Edmodo</span></li></a>
+        <a href="/history/hinduisticholytexts.html"><li class="contacts span2"><i class="fa fa-book fa-4x"></i><span>Online Textbook</span></li></a>
+        <a href="/history/schools.html"><li class="internet"><i class="fa fa-tasks fa-4x"></i><span>Chapter Outlines</span></li></a>
+        <a href="/history/concepts.html"><li class="games span2"><i class="fa fa-facebook-official fa-4x"></i><span>AP Gov Facebook</span></li></a>
+        <a href="/history/places.html"><li class="maps"><i class="fa fa-twitter-square fa-4x"></i><span>AP Gov Twitter</span></li></a>
+        <a href="/history/caste.html"><li class="search"><i class="fa fa-commenting fa-4x"></i><span>Remind101</span></li></a>
+        <a href="/history/spread.html"><li class="email"><i class="fa fa-youtube-play fa-4x">&thinsp;</i><span>AP Gov YouTube</span></li></a>
+        <a href="/history/truths.html"><li class="photos"><i class="fa fa-envelope fa-4x"></i><span>My E-Mail</span></li></a>
+        <a href="/history/modern.html"><li class="settings"><i class="fa fa-institution fa-4x"></i><span>Collegeboard</span></li></a>
+    </ul>
+</main>
+</body>
